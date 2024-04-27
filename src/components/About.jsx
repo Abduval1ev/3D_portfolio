@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { services } from "../constants/index";
 import { Tilt } from "react-tilt";
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ title, i, icon }) => {
   return (
@@ -31,7 +32,7 @@ const ServiceCard = ({ title, i, icon }) => {
 
 const About = () => {
   return (
-    <div className="px-16">
+    <div className="">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -48,7 +49,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap justify-center items-center gap-8">
+      <div className="mt-20 flex flex-wrap gap-3 sm:gap-8 justify-center items-center">
         {services.map((item, i) => (
           <ServiceCard key={i} {...item} />
         ))}
@@ -57,4 +58,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");
