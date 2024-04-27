@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import NavBar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Tech from "./components/Tech";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </div>
         <div className="relative z-0">
           <About />
+          <Tech />
         </div>
       </div>
     </BrowserRouter>
