@@ -49,7 +49,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-3 sm:gap-8 justify-center items-center">
+      <div className="mt-20 flex flex-wrap gap-8 sm:gap-10 justify-center items-center">
         {services.map((item, i) => (
           <ServiceCard key={i} {...item} />
         ))}
