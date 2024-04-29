@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <About />
           <Tech />
           <Works />
+          <Contact />
         </div>
       </div>
     </BrowserRouter>

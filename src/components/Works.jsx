@@ -5,7 +5,6 @@ import { github } from "../assets/";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { projects } from "../constants";
-import { p } from "maath/dist/misc-19a3ec46.esm";
 
 const ProjectCard = ({
   index,
